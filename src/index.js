@@ -1,6 +1,6 @@
 import "./style.css";
 import GithubIcon from "./github-mark.svg";
-
+import { onAboutClick } from "./about.js";
 /*----------------------------------------------------
                 button factory
 ----------------------------------------------------*/
@@ -26,6 +26,7 @@ const makeHeader = () => {
   buttons.appendChild(homeButton);
   buttons.appendChild(menuButton);
   buttons.appendChild(aboutButton);
+
   header.appendChild(buttons);
   return header;
 };
@@ -69,6 +70,11 @@ const makeDOM = (mainSection) => {
 
 const removeDOM = () => {
     document.body.childNodes.forEach((child) => document.body.removeChild(child));
+}
+
+const onHomeClick = () => {
+    removeDOM();
+    makeDOM(makeIndexPage());
 }
 
 makeDOM(makeIndexPage());

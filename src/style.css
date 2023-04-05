@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Courier New', Courier, monospace;
-    outline: 1px solid black;
+    outline: 1px solid orange;
 }
 
 
@@ -44,9 +44,8 @@ header {
 
 
 main {
-    overflow: scroll;
     flex: 1;
-    padding: 1rem 20%;
+    /* padding: 1rem 20% 1rem 20%; */
 }
 
 

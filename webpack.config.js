@@ -7,6 +7,7 @@ module.exports = {
     about: './src/about.js',
     menu: './src/menu.js',
   },
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Test'
