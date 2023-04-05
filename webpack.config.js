@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
+    webpage: './src/webpage.js',
+    home: './src/home.js',
     about: './src/about.js',
     menu: './src/menu.js',
   },
   devtool: 'inline-source-map',
+  mode: "development",
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Test'

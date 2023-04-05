@@ -1,3 +1,7 @@
+:root {
+    --bg-color: 
+}
+
 *,
 *::before,
 *::after {
@@ -55,6 +59,7 @@ footer {
     justify-content: center;
     align-items: center;
     bottom: 0;
+    background-color: bisque;
 }
 
 footer > a{
