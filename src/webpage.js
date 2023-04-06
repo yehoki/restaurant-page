@@ -1,10 +1,10 @@
 import GithubIcon from "./github-mark.svg";
 import { makeAboutPage } from "./about";
 import { makeMenuPage } from "./menu";
+import makeHomePage from "./home";
 /*----------------------------------------------------
                 button factory
 ----------------------------------------------------*/
-
 const makeButton = (className, text) => {
   const btn = document.createElement("button");
   btn.classList.add(className);
@@ -13,6 +13,7 @@ const makeButton = (className, text) => {
   return btn;
 };
 
+// Functionality for button eventlisteners to change active tab onclick
 const resetActiveButton = () => {
   document.querySelectorAll(".header-button").forEach((btn) => {
     if (btn.classList.contains("active")) {
@@ -21,13 +22,9 @@ const resetActiveButton = () => {
   });
 };
 
-const makeActiveButton = (btn) => {
-  btn.classList.add("active");
-};
-
 const onHeaderButtonClick = (btn) => {
   resetActiveButton();
-  makeActiveButton(btn);
+  btn.classList.add("active");
 };
 
 /*----------------------------------------------------
@@ -61,7 +58,6 @@ const makeHeader = (isHome = true) => {
     makePage(makeAboutPage());
   });
 
-
   buttons.classList.add("header-buttons");
   buttons.appendChild(homeButton);
   buttons.appendChild(menuButton);
@@ -91,10 +87,6 @@ const makeFooter = () => {
   return footer;
 };
 
-const removeDOM = () => {
-  document.body.childNodes.forEach((child) => document.body.removeChild(child));
-};
-
 function makePage(whichPage = makeHomePage()) {
   document.body.innerHTML = "";
   arguments.length === 0
@@ -104,14 +96,4 @@ function makePage(whichPage = makeHomePage()) {
   document.body.appendChild(makeFooter());
 }
 
-/*----------------------------------------------------
-                Index page factory
-----------------------------------------------------*/
-
-const makeHomePage = () => {
-  const main = document.createElement("main");
-  main.innerHTML = "Test Home";
-  return main;
-};
-
-export { removeDOM, makePage };
+export { makePage };

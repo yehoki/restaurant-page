@@ -9,18 +9,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Courier New', Courier, monospace;
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
 }
 
+
+::-webkit-scrollbar {
+    width: 10px;
+}
 
 body {
     height: 100dvh;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 header {
-    background-color: bisque;
+    background-color: #daa520;
 }
 
 .header-buttons {
@@ -43,15 +48,61 @@ header {
 
 .header-button:hover,
 .header-button:active {
-    /*  */
+    text-transform: translate();
 }
 
 
 main {
     flex: 1;
-    /* padding: 1rem 20% 1rem 20%; */
+    /* background-color: #28282B; */
+    background: url(./home-page.jpg) center center no-repeat;
+    background-size: cover;
+    background-position: 0 5%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
 
+.home-page,
+.menu-page,
+.about-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 50% 1rem 5%;
+    text-align: center;
+
+}
+
+.home-page > p {
+    color: white;
+    flex: 1;
+}
+
+.home-page > a {
+    text-decoration: none;
+    justify-content: end;
+    align-items: center;
+}
+
+.home-page > a:hover,
+.home-page > a:visited,
+.home-page > a:link {
+    color: #cbd5e1;
+}
+
+.menu-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+
+}
+
+.about-page {
+    overflow-y: scroll;
+}
 
 footer {   
     min-height: 50px;
@@ -59,7 +110,8 @@ footer {
     justify-content: center;
     align-items: center;
     bottom: 0;
-    background-color: bisque;
+    background-color: #daa520;
+    color: black;
 }
 
 footer > a{

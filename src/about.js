@@ -1,29 +1,16 @@
-// import {makeDOM, removeDOM} from './index.js';
-
-
 /*----------------------------------------------------
                 About page factory
 ----------------------------------------------------*/
-
-// const makeAboutPage = () => {
-//     const main = document.createElement('main');
-//     main.innerHTML = 'About Page';
-//     return main;
-// }
-
-// const onAboutClick = () => {
-//     removeDOM();
-//     makeDOM(makeAboutPage());
-// }
-
 const makeAboutPage = () => {
-    const main = document.createElement('main');
-    main.innerHTML = 'About Page';
-    main.textContent = 'hehehe'
-    return main;
-}
+  const main = document.createElement("main");
+  main.classList.add("about-page");
+  main.textContent = "About Page";
+  main.innerHTML += "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet rhoncus nibh. Curabitur pharetra pellentesque nibh, a facilisis sapien maximus at. Vestibulum vel pharetra libero. Etiam dictum, magna vitae faucibus imperdiet, purus diam pharetra quam, ac vehicula nulla arcu non urna. Suspendisse potenti. Morbi eu placerat erat. Morbi scelerisque quis ligula at viverra. Sed faucibus leo ac metus cursus imperdiet. Nulla quis suscipit urna, a commodo erat. Nulla id tortor at nisl feugiat bibendum eu a arcu. Pellentesque eleifend, quam sed posuere viverra, quam elit vulputate justo, in aliquet dui urna in diam. Nunc condimentum mauris nec dolor mollis gravida. Integer in eleifend mi.</p>"
+  main.innerHTML += "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet rhoncus nibh. Curabitur pharetra pellentesque nibh, a facilisis sapien maximus at. Vestibulum vel pharetra libero. Etiam dictum, magna vitae faucibus imperdiet, purus diam pharetra quam, ac vehicula nulla arcu non urna. Suspendisse potenti. Morbi eu placerat erat. Morbi scelerisque quis ligula at viverra. Sed faucibus leo ac metus cursus imperdiet. Nulla quis suscipit urna, a commodo erat. Nulla id tortor at nisl feugiat bibendum eu a arcu. Pellentesque eleifend, quam sed posuere viverra, quam elit vulputate justo, in aliquet dui urna in diam. Nunc condimentum mauris nec dolor mollis gravida. Integer in eleifend mi.</p>"
+  main.innerHTML += "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet rhoncus nibh. Curabitur pharetra pellentesque nibh, a facilisis sapien maximus at. Vestibulum vel pharetra libero. Etiam dictum, magna vitae faucibus imperdiet, purus diam pharetra quam, ac vehicula nulla arcu non urna. Suspendisse potenti. Morbi eu placerat erat. Morbi scelerisque quis ligula at viverra. Sed faucibus leo ac metus cursus imperdiet. Nulla quis suscipit urna, a commodo erat. Nulla id tortor at nisl feugiat bibendum eu a arcu. Pellentesque eleifend, quam sed posuere viverra, quam elit vulputate justo, in aliquet dui urna in diam. Nunc condimentum mauris nec dolor mollis gravida. Integer in eleifend mi.</p>"
+  main.innerHTML += "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet rhoncus nibh. Curabitur pharetra pellentesque nibh, a facilisis sapien maximus at. Vestibulum vel pharetra libero. Etiam dictum, magna vitae faucibus imperdiet, purus diam pharetra quam, ac vehicula nulla arcu non urna. Suspendisse potenti. Morbi eu placerat erat. Morbi scelerisque quis ligula at viverra. Sed faucibus leo ac metus cursus imperdiet. Nulla quis suscipit urna, a commodo erat. Nulla id tortor at nisl feugiat bibendum eu a arcu. Pellentesque eleifend, quam sed posuere viverra, quam elit vulputate justo, in aliquet dui urna in diam. Nunc condimentum mauris nec dolor mollis gravida. Integer in eleifend mi.</p>"
+  main.innerHTML += "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet rhoncus nibh. Curabitur pharetra pellentesque nibh, a facilisis sapien maximus at. Vestibulum vel pharetra libero. Etiam dictum, magna vitae faucibus imperdiet, purus diam pharetra quam, ac vehicula nulla arcu non urna. Suspendisse potenti. Morbi eu placerat erat. Morbi scelerisque quis ligula at viverra. Sed faucibus leo ac metus cursus imperdiet. Nulla quis suscipit urna, a commodo erat. Nulla id tortor at nisl feugiat bibendum eu a arcu. Pellentesque eleifend, quam sed posuere viverra, quam elit vulputate justo, in aliquet dui urna in diam. Nunc condimentum mauris nec dolor mollis gravida. Integer in eleifend mi.</p>"
+  return main;
+};
 
-
-export {
-    makeAboutPage,
-}
+export { makeAboutPage };
